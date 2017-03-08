@@ -1,8 +1,8 @@
-Spring Boot FastDFS Starter
+# Spring Boot FastDFS Starter
 
 Usage:
 
-pom.xml add fastdfs-spring-boot-starter dependency
+Add dependency **fastdfs-spring-boot-starter** to **pom.xml** 
 
 ```xml
 		<dependency>
@@ -12,7 +12,7 @@ pom.xml add fastdfs-spring-boot-starter dependency
 		</dependency>
 ```
 
-Config application.yml
+Config **application.yml**
 
 ```yml
 fdfs:
@@ -24,7 +24,7 @@ fdfs:
     
 ```
 
-Inject FastFileStorageClient
+Inject **FastFileStorageClient**
 
 ```java
   @Autowired
