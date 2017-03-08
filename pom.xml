@@ -38,7 +38,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- Librairies versions -->
-    <fastdfs-client.version>0.3.0-SNAPSHOT</fastdfs-client.version>
+    <fastdfs-client.version>0.3.0</fastdfs-client.version>
     <logback.version>1.2.1</logback.version>
   </properties>
   <dependencies>

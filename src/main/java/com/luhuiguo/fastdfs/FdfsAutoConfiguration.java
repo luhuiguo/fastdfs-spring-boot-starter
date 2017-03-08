@@ -9,6 +9,8 @@ import com.luhuiguo.fastdfs.conn.ConnectionPoolConfig;
 import com.luhuiguo.fastdfs.conn.FdfsConnectionPool;
 import com.luhuiguo.fastdfs.conn.PooledConnectionFactory;
 import com.luhuiguo.fastdfs.conn.TrackerConnectionManager;
+import com.luhuiguo.fastdfs.service.AppendFileStorageClient;
+import com.luhuiguo.fastdfs.service.DefaultAppendFileStorageClient;
 import com.luhuiguo.fastdfs.service.DefaultFastFileStorageClient;
 import com.luhuiguo.fastdfs.service.DefaultTrackerClient;
 import com.luhuiguo.fastdfs.service.FastFileStorageClient;
@@ -64,9 +66,15 @@ public class FdfsAutoConfiguration {
   }
 
   @Bean
-  public FastFileStorageClient storageClient(TrackerClient trackerClient,
+  public FastFileStorageClient fastFileStorageClient(TrackerClient trackerClient,
       ConnectionManager connectionManager) {
     return new DefaultFastFileStorageClient(trackerClient, connectionManager);
+  }
+  
+  @Bean
+  public AppendFileStorageClient appendFileStorageClient(TrackerClient trackerClient,
+      ConnectionManager connectionManager) {
+    return new DefaultAppendFileStorageClient(trackerClient, connectionManager);
   }
 
 }
