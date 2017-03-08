@@ -1,0 +1,82 @@
+######################
+# Eclipse
+######################
+.project
+.metadata
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+.springBeans
+.factorypath
+
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+######################
+# Maven
+######################
+logs/
+target/
+
+######################
+# Gradle
+######################
+.gradle/
+
+######################
+# Node
+######################
+node/
+node_modules/
+
+######################
+# Bower
+######################
+bower_components/
+
+######################
+# SASS
+######################
+.sass-cache/
+.tmp/
+
+######################
+# Windows
+######################
+Thumbs.db
+Desktop.ini
+
+######################
+# Mac OSX
+######################
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+######################
+# SVN
+######################
+.svn
+
+######################
+# Logs and databases
+######################
+*.log
+*.sqlite
+*.state
+*.lock
+*.crf
+*.drf
