@@ -1,5 +1,6 @@
 package com.luhuiguo.fastdfs;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,9 +38,9 @@ public class FdfsAutoConfiguration {
 
 
   @Bean
+  @ConfigurationProperties(prefix = "fdfs.pool")
   public ConnectionPoolConfig connectionPoolConfig() {
     ConnectionPoolConfig connectionPoolConfig = new ConnectionPoolConfig();
-    //connectionPoolConfig.setJmxEnabled(false);
     return connectionPoolConfig;
   }
 
